@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Pad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        p, ul {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .features-list, .components-list {
+            margin-bottom: 20px;
+        }
+        .tech-stack {
+            list-style-type: none;
+            padding: 0;
+        }
+        .tech-stack li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NotePad</h1>
+        
+        <div class="main-components">
+            <h2>Main Components:</h2>
+            <ul class="components-list">
+                <li><strong>A Frame:</strong> Contains a TextArea for text input.</li>
+                <li><strong>MenuBar:</strong> Includes menus for File, Edit, Format, and Color.</li>
+            </ul>
+        </div>
+        
+        <div class="menu-functionality">
+            <h2>Menu Functionalities:</h2>
+            <ul>
+                <li><strong>File Menu:</strong>
+                    <ul>
+                        <li>New: Creates a new text file.</li>
+                        <li>Print: (Functionality pending in the provided code.)</li>
+                        <li>Exit: Closes the application.</li>
+                    </ul>
+                </li>
+                <li><strong>Edit Menu:</strong>
+                    <ul>
+                        <li>Copy, Paste, Cut: Standard clipboard operations.</li>
+                        <li>Undo, Redo: Basic undo and redo operations.</li>
+                        <li>Find: Searches for text within the document.</li>
+                        <li>Replace: Replaces text in the document.</li>
+                        <li>Delete: Deletes selected or all text.</li>
+                    </ul>
+                </li>
+                <li><strong>Format Menu:</strong>
+                    <ul>
+                        <li>Font selection and size adjustment (UI prepared for expansion).</li>
+                    </ul>
+                </li>
+                <li><strong>Color Menu:</strong>
+                    <ul>
+                        <li>Background and text color customization.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="key-features">
+            <h2>Key Features:</h2>
+            <ul>
+                <li>Real-time updates for word count, line count, and character count.</li>
+                <li>Keyboard shortcuts (e.g., Ctrl + N, Ctrl + W) for ease of use.</li>
+                <li>Find and Replace functionality with dialog windows for input and actions.</li>
+                <li>Customizable font and color settings.</li>
+            </ul>
+        </div>
+
+        <div class="event-handling">
+            <h2>Event Handling:</h2>
+            <ul>
+                <li>Listens for key events (e.g., shortcuts like Ctrl+F for Find).</li>
+                <li>Handles menu item actions using ActionListener.</li>
+            </ul>
+        </div>
+        
+        <div class="ui-design">
+            <h2>UI Design:</h2>
+            <ul>
+                <li>Dialogs for Find and Replace functionalities with colorful backgrounds.</li>
+                <li>Dynamically updating status bar for text statistics.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

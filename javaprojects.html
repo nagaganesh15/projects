@@ -1,0 +1,259 @@
+<html>
+    <head>
+        <style>
+            ul{
+                text-decoration: none;  
+                margin: 0px;
+                padding: 0px;
+                /* text-align: center; */
+            }
+            li:hover{
+                background-color: rgb(0, 255, 34);
+                /* border:2px solid black; */
+            }
+            #list1,#list2,#list3,#list4{
+                display: none;
+                font-size: 25px;
+                margin-left:40px;
+                text-align: left;
+            }
+            a{
+                text-decoration: none;
+                color:black;
+            }
+            #d1,#d2,#d3,#d4{
+                font-size: 28px;
+                /* text-align: center; */
+                /* background-color:transparent;     */
+                margin-top: 10px;
+                /* padding-top: 10px;
+                padding-left: 5px;
+                padding-bottom: 10px; */
+                padding: 5px;
+                cursor:pointer;
+            }
+            .padding{
+                padding: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- <a id="button">Memory Card Game</a> -->
+        <ul type="none">
+            <a onclick="drop1()" href="notepadphoto.html" target="right"><li id="d1" style="background-color: yellow;">Notepad</li></a>
+            <div id="list1" style="display: block;">
+                <a href="notepadvideo.html" target="right"><li class="padding" id="c1" onclick="bg1()">Video</li></a>
+                <!-- <a href="https://nagaganesh15.github.io/age-calculator/" target="right"><li class="padding" id="c2" onclick="bg2()">See the Project</li></a> -->
+                <a href="notepaddescription.html" target="right"><li class="padding" id="c3" onclick="bg3()">Description</li></a>
+            </div>
+            <a onclick="drop2()" href="dayjavaphoto.html" target="right"><li id="d2">Day Calculator</li></a>
+            <div id="list2">
+                <a href="dayjavavideo.html" target="right"><li class="padding" id="c4" onclick="bg4()">Video</li></a>
+                <!-- <a href="https://nagaganesh15.github.io/Day-Calculator/" target="right"><li class="padding" id="c5" onclick="bg5()">See the Project</li></a> -->
+                <a href="dayjavadescription.html" target="right"><li class="padding" id="c6" onclick="bg6()">Description</li></a>
+            </div>
+            <a onclick="drop3()" href="calculatorjavaphoto.html" target="right"><li id="d3">Programming Calculator</li></a>
+            <div id="list3">
+                <a href="calculatorjavavideo.html" target="right"><li class="padding" id="c7" onclick="bg7()">Video</li></a>
+                <!-- <a href="https://nagaganesh15.github.io/Stone-Paper-Scissor/" target="right"><li class="padding" id="c8" onclick="bg8()">See the Project</li></a> -->
+                <a href="calculatorjavadescription.html" target="right"><li class="padding" id="c9" onclick="bg9()">Description</li></a>
+            </div>
+            <a onclick="drop4()" href="alarmphoto.html" target="right"><li id="d4">Alarm</li></a>
+            <div id="list4">
+                <a href="memoryvideo.html" target="right"><li class="padding" id="c10" onclick="bg10()">Video</li></a>
+                <!-- <a href="https://nagaganesh15.github.io/Stone-Paper-Scissor/" target="right"><li class="padding" id="c11" onclick="bg11()">See the Project</li></a> -->
+                <a href="alarmdescription.html" target="right"><li class="padding" id="c12" onclick="bg12()">Description</li></a>
+            </div>
+        </ul>
+    </body>
+    <script>
+        function bg1()
+        {
+            let ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c1').style.backgroundColor="pink";
+        }
+        function bg2()
+        {
+            let ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c2').style.backgroundColor="pink";
+        }
+        function bg3()
+        {
+            let ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c3').style.backgroundColor="pink";
+        }
+        function bg4()
+        {
+            let ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c4').style.backgroundColor="pink";
+        }
+        function bg5()
+        {
+            let ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c5').style.backgroundColor="pink";
+        }
+        function bg6()
+        {
+            let ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c6').style.backgroundColor="pink";
+        }
+        function bg7()
+        {
+            let ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c7').style.backgroundColor="pink";
+        }
+        function bg8()
+        {
+            let ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c8').style.backgroundColor="pink";
+        }
+        function bg9()
+        {
+            let ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c9').style.backgroundColor="pink";
+        }
+        function bg10()
+        {
+            let ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c10').style.backgroundColor="pink";
+        }
+        function bg11()
+        {
+            let ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c11').style.backgroundColor="pink";
+        }
+        function bg12()
+        {
+            let ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c12').style.backgroundColor="pink";
+        }
+        function drop1()
+        {
+            document.getElementById('d1').style.backgroundColor="yellow";
+            let i=2
+            while(i<=4)
+            {
+                document.getElementById('d'+i).style.backgroundColor="";
+                document.getElementById('list'+i).style.display="none";
+                i+=1;
+            }
+            let c=document.getElementById('list1');
+            if(c.style.display=="block")
+            {
+                c.style.display="none";
+            }
+            else{
+                c.style.display="block";
+            }
+
+        }
+        function drop2()
+        {
+            document.getElementById('d2').style.backgroundColor="yellow";
+            let i=1;
+            while(i<=1)
+            {
+                document.getElementById('d'+i).style.backgroundColor="";
+                document.getElementById('list'+i).style.display="none";
+                i+=1;
+            }
+            i=3;
+            while(i<=4)
+            {
+                document.getElementById('d'+i).style.backgroundColor="";
+                document.getElementById('list'+i).style.display="none";
+                i+=1;
+            }
+            let c=document.getElementById('list2');
+            if(c.style.display=="block")
+            {
+                c.style.display="none";
+            }
+            else{
+                c.style.display="block";
+            }
+        }
+        function drop3()
+        {
+            document.getElementById('d3').style.backgroundColor="yellow";
+            let i=1;
+            while(i<=2)
+            {
+                document.getElementById('d'+i).style.backgroundColor="";
+                document.getElementById('list'+i).style.display="none";
+                i+=1;
+            }
+            i=4;
+            while(i<=4)
+            {
+                document.getElementById('d'+i).style.backgroundColor="";
+                document.getElementById('list'+i).style.display="none";
+                i+=1;
+            }
+            let c=document.getElementById('list3');
+            if(c.style.display=="block")
+            {
+                c.style.display="none";
+            }
+            else{
+                c.style.display="block";
+            }
+        }
+        function drop4()
+        {
+            document.getElementById('d4').style.backgroundColor="yellow";
+            let i=1;
+            while(i<=3)
+            {
+                document.getElementById('d'+i).style.backgroundColor="";
+                document.getElementById('list'+i).style.display="none";
+                i+=1;
+            }
+            let c=document.getElementById('list4');
+            if(c.style.display=="block")
+            {
+                c.style.display="none";
+            }
+            else{
+                c.style.display="block";
+            }
+        }
+    </script>
+</html>

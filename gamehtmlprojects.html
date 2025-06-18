@@ -1,0 +1,383 @@
+<html>
+    <head>
+        <style>
+            ul{
+                text-decoration: none;
+                margin: 0px;
+                padding: 0px;
+                /* text-align: center; */
+            }
+            button{  
+                border: 0px;
+                font-size: 25px;
+                text-align: center;
+                background-color:transparent;
+                padding: 5px;
+                cursor:pointer;
+            }   
+            /* button:hover{
+                background-color: #f0f0f0;
+            } */
+            li:hover{
+                background-color: rgb(0, 255, 34);
+                /* border:2px solid black; */
+            }
+            #line{
+                border-bottom: 2px solid black;
+                background-color: red;
+            }
+            #list1,#list2,#list3,#list4,#list5,#list6{
+                display: none;
+                font-size: 25px;
+                margin-left:40px;
+                text-align: left;
+            }
+            a{
+                text-decoration: none;
+                color:black;
+            }
+            #d1,#d2,#d3,#d4,#d5,#d6{
+                font-size: 28px;
+                /* text-align: center; */
+                /* background-color:transparent;     */
+                /* padding: 0px; */
+                margin-top:10px;
+                cursor:pointer;
+            }
+            .padding{
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <a id="button">Memory Card Game</a> -->
+        <ul type="none">
+            <a onclick="drop1()" href="memoryphoto.html" target="right"><li id="d1" style="padding: 5px; background-color: yellow;" class="pa">Memory Card Game</li></a>
+            <div id="list1" style="display: block;">
+                <a href="memoryvideo.html" target="right"><li class="padding" id="c1" onclick="bg1()">Video</li></a>
+                <a href="https://nagaganesh15.github.io/Memory-Card-Game/" target="right"><li class="padding" id="c2" onclick="bg2()">Play</li></a>
+                <a href="memorydescription.html" target="right"><li class="padding" id="c3" onclick="bg3()">Description</li></a>
+            </div>
+            <a onclick="drop2()" href="ticphoto.html" target="right"><li id="d2" style="padding: 5px;">Tic Tac Toe</li></a>
+            <div id="list2">
+                <a href="tictacvideo.html" target="right"><li class="padding" id="c4" onclick="bg4()">Video</li></a>
+                <a href="https://nagaganesh15.github.io/TicTacToe/" target="right"><li class="padding" id="c5" onclick="bg5()">Play</li></a>
+                <a href="tictactoedescription.html" target="right"><li class="padding" id="c6" onclick="bg6()">Description</li></a>
+            </div>
+            <a onclick="drop3()" href="stonephoto.html" target="right"><li id="d3" style="padding: 5px;">Stone Paper Scissor</li></a>
+            <div id="list3">
+                <a href="stonevideo.html" target="right"><li class="padding" id="c7" onclick="bg7()">Video</li></a>
+                <a href="https://nagaganesh15.github.io/Stone-Paper-Scissor/" target="right" id="c8" onclick="bg8()"><li class="padding">Play</li></a>
+                <a href="stonedescription.html" target="right"><li class="padding" id="c9" onclick="bg9()">Description</li></a>
+            </div>
+            <a onclick="drop4()" href="guessphoto.html" target="right"><li id="d4" style="padding: 5px;">Guess the Number</li></a>
+            <div id="list4">
+                <a href="guessnumbervideo.html" target="right"><li class="padding" id="c10" onclick="bg10()">Video</li></a>
+                <a href="https://nagaganesh15.github.io/Guess-the-number" target="right"><li class="padding" id="c11" onclick="bg11()">Play</li></a>
+                <a href="guessnumberdescription.html" target="right"><li class="padding" id="c12" onclick="bg12()">Description</li></a>
+            </div>
+            <a onclick="drop5()" href="catchphoto.html" target="right"><li id="d5" style="padding: 5px;">Catch the Drops</li></a>
+            <div id="list5">
+                <a href="catchdropsvideo.html" target="right"><li class="padding" id="c13" onclick="bg13()">Video</li></a>
+                <a href="https://nagaganesh15.github.io/Catch-the-Water-Drops/" target="right"><li class="padding" id="c14" onclick="bg14()">Play</li></a>
+                <a href="catchdropsdescription.html" target="right"><li class="padding" id="c15" onclick="bg15()">Description</li></a>
+            </div>
+            <a onclick="drop6()" href="breakphoto.html" target="right"><li id="d6" style="padding: 5px;">Break the Bricks</li></a>
+            <div id="list6">
+                <a href="breakbricksvideo.html" target="right"><li class="padding" id="c16" onclick="bg16()">Video</li></a>
+                <a href="https://nagaganesh15.github.io/Break-the-Bricks/" target="right"><li class="padding" id="c17" onclick="bg17()">Play</li></a>
+                <a href="breakbriksdescription.html" target="right"><li class="padding" id="c18" onclick="bg18()">Description</li></a>
+            </div>
+            
+        </ul>
+    </body>
+    <script>
+        function bg1()
+        {
+            const ele = document.querySelectorAll('.padding');
+            ele.forEach((element) => {
+                element.style.backgroundColor = "";
+            });
+            document.getElementById('c1').style.backgroundColor="pink";
+        }
+        function bg2()
+        {
+            const ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c2').style.backgroundColor="pink";
+        }
+        function bg3()
+        {
+            const ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c3').style.backgroundColor="pink";
+        }
+        function bg4()
+        {
+            const ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c4').style.backgroundColor="pink";
+        }
+        function bg5()
+        {
+            const ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c5').style.backgroundColor="pink";
+        }
+        function bg6()
+        {
+            const ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c6').style.backgroundColor="pink";
+        }
+        function bg7()
+        {
+            const ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c7').style.backgroundColor="pink";
+        }
+        function bg8()
+        {
+            const ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c8').style.backgroundColor="pink";
+        }
+        function bg9()
+        {
+            const ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c9').style.backgroundColor="pink";
+        }
+        function bg10()
+        {
+            const ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c10').style.backgroundColor="pink";
+        }
+        function bg11()
+        {
+            const ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c11').style.backgroundColor="pink";
+        }
+        function bg12()
+        {
+            const ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c12').style.backgroundColor="pink";
+        }
+        function bg13()
+        {
+            const ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c13').style.backgroundColor="pink";
+        }
+        function bg14()
+        {
+            const ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c14').style.backgroundColor="pink";
+        }
+        function bg15()
+        {
+            const ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c15').style.backgroundColor="pink";
+        }
+        function bg16()
+        {
+            const ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c16').style.backgroundColor="pink";
+        }
+        function bg17()
+        {
+            const ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c17').style.backgroundColor="pink";
+        }
+        function bg18()
+        {
+            const ele=document.querySelectorAll('.padding');
+            ele.forEach((i)=>{
+                i.style.backgroundColor="";
+            })
+            document.getElementById('c18').style.backgroundColor="pink";
+        }
+        function drop1()
+        {
+            document.getElementById('d1').style.backgroundColor="yellow";
+            let i=2
+            while(i<=6)
+            {
+                document.getElementById('d'+i).style.backgroundColor="";
+                document.getElementById('list'+i).style.display="none";
+                i+=1;
+            }
+            let c=document.getElementById('list1');
+            if(c.style.display=="block")
+            {
+                c.style.display="none";
+            }
+            else{
+                c.style.display="block";
+            }
+
+        }
+        function drop2()
+        {
+            document.getElementById('d2').style.backgroundColor="yellow";
+            let i=1;
+            while(i<=1)
+            {
+                document.getElementById('d'+i).style.backgroundColor="";
+                document.getElementById('list'+i).style.display="none";
+                i+=1;
+            }
+            i=3;
+            while(i<=6)
+            {
+                document.getElementById('d'+i).style.backgroundColor="";
+                document.getElementById('list'+i).style.display="none";
+                i+=1;
+            }
+            let c=document.getElementById('list2');
+            if(c.style.display=="block")
+            {
+                c.style.display="none";
+            }
+            else{
+                c.style.display="block";
+            }
+        }
+        function drop3()
+        {
+            document.getElementById('d3').style.backgroundColor="yellow";
+            let i=1;
+            while(i<=2)
+            {
+                document.getElementById('d'+i).style.backgroundColor="";
+                document.getElementById('list'+i).style.display="none";
+                i+=1;
+            }
+            i=4;
+            while(i<=6)
+            {
+                document.getElementById('d'+i).style.backgroundColor="";
+                document.getElementById('list'+i).style.display="none";
+                i+=1;
+            }
+            let c=document.getElementById('list3');
+            if(c.style.display=="block")
+            {
+                c.style.display="none";
+            }
+            else{
+                c.style.display="block";
+            }
+        }
+        function drop4()
+        {
+            document.getElementById('d4').style.backgroundColor="yellow";
+            let i=1;
+            while(i<=3)
+            {
+                document.getElementById('d'+i).style.backgroundColor="";
+                document.getElementById('list'+i).style.display="none";
+                i+=1;
+            }
+            i=5;
+            while(i<=6)
+            {
+                document.getElementById('d'+i).style.backgroundColor="";
+                document.getElementById('list'+i).style.display="none";
+                i+=1;
+            }
+            let c=document.getElementById('list4');
+            if(c.style.display=="block")
+            {
+                c.style.display="none";
+            }
+            else{
+                c.style.display="block";
+            }
+        }
+        function drop5()
+        {
+            document.getElementById('d5').style.backgroundColor="yellow";
+            let i=1;
+            while(i<=4)
+            {
+                document.getElementById('d'+i).style.backgroundColor="";
+                document.getElementById('list'+i).style.display="none";
+                i+=1;
+            }
+            i=6;
+            while(i<=6)
+            {
+                document.getElementById('d'+i).style.backgroundColor="";
+                document.getElementById('list'+i).style.display="none";
+                i+=1;
+            }
+            let c=document.getElementById('list5');
+            if(c.style.display=="block")
+            {
+                c.style.display="none";
+            }
+            else{
+                c.style.display="block";
+            }
+        }
+        function drop6()
+        {
+            document.getElementById('d6').style.backgroundColor="yellow";
+            let i=1;
+            while(i<=5)
+            {
+                document.getElementById('d'+i).style.backgroundColor="";
+                document.getElementById('list'+i).style.display="none";
+                i+=1;
+            }
+            let c=document.getElementById('list6');
+            if(c.style.display=="block")
+            {
+                c.style.display="none";
+            }
+            else{
+                c.style.display="block";
+            }
+        }
+    </script>
+</html>

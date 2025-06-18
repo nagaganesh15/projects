@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <style>
+            a{
+                text-decoration:none;
+                color:black;
+                background-color:yellow;
+                padding: 10px;
+                margin-left:50px;
+                font-size:25px;
+                text-align:center;
+            }
+            a:hover{
+                background-color: cyan;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="gamehtmlprojects.html" target="left" onclick="bg1()" id="c1" style="background-color: orange;">Games Using HTML</a>
+        <a href="utilityprojects.html" target="left" onclick="bg2()" id="c2">Utility Projects Using HTML</a>
+        <a href="webpages.html" target="left" onclick="bg3()" id="c3">Web Pages</a>
+        <a href="javaprojects.html" target="left" onclick="bg4()" id="c4">JAVA</a>
+        <a href="unityprojects.html" target="left" onclick="bg5()" id="c5">UNITY</a>
+        <!-- <a href="javaprojects.html" target="left" onclick="bg6()" id="c6">React Native</a> -->
+    </body>
+    <script>
+        function bg1()
+        {
+            parent.right.location.href="memoryphoto.html";
+            document.getElementById('c1').style.backgroundColor="orange";
+            let i=2;
+            while(i<=6)
+            {
+                document.getElementById('c'+i).style.backgroundColor="";
+                i+=1;
+            }
+        }
+        function bg2()
+        {
+            // Update the left frame
+            // parent.left.location.href = "utilityprojects.html";
+
+            // Update the right frame
+            parent.right.location.href = "agephoto.html";
+            document.getElementById('c2').style.backgroundColor="orange";
+
+            let i=1;
+            while(i<=1)
+            {
+                document.getElementById('c'+i).style.backgroundColor="";
+                i+=1;
+            }
+            i=3;
+            while(i<=6)
+            {
+                document.getElementById('c'+i).style.backgroundColor="";
+                i+=1;
+            }
+            
+        }
+        function bg3()
+        {
+            parent.right.location.href="foodphoto.html";
+            document.getElementById('c3').style.backgroundColor="orange";
+            let i=1;
+            while(i<=2)
+            {
+                document.getElementById('c'+i).style.backgroundColor="";
+                i+=1;
+            }
+            i=4;
+            while(i<=6)
+            {
+                document.getElementById('c'+i).style.backgroundColor="";
+                i+=1;
+            }
+            
+        }
+        function bg4()
+        {
+            parent.right.location.href="notepadphoto.html";
+            document.getElementById('c4').style.backgroundColor="orange";
+
+            let i=1;
+            while(i<=3)
+            {
+                document.getElementById('c'+i).style.backgroundColor="";
+                i+=1;
+            }
+            i=5;
+            while(i<=6)
+            {
+                document.getElementById('c'+i).style.backgroundColor="";
+                i+=1;
+            }
+        }
+        function bg5()
+        {
+            parent.right.location.href="playwithmouseyphoto.html";
+            document.getElementById('c5').style.backgroundColor="orange";
+
+            let i=1;
+            while(i<=4)
+            {
+                document.getElementById('c'+i).style.backgroundColor="";
+                i+=1;
+            }
+            i=6;
+            while(i<=6)
+            {
+                document.getElementById('c'+i).style.backgroundColor="";
+                i+=1;
+            }
+        }
+        function bg6()
+        {
+            let i=1;
+            while(i<=5)
+            {
+                document.getElementById('c'+i).style.backgroundColor="";
+                i+=1;
+            }
+            document.getElementById('c6').style.backgroundColor="orange";
+        }
+    </script>
+</html>

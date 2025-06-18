@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Application in Java</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+        h2 {
+            color: #007BFF;
+        }
+        p, ul {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .key-features, .technical-details, .learning-outcomes {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Alarm Application</h1>
+
+        <p>This mini-project demonstrates the creation of a simple alarm application using Java's AWT (Abstract Window Toolkit) and sound libraries. The project focuses on real-time functionality, user interaction, and basic multimedia integration.</p>
+
+        <div class="key-features">
+            <h2>Key Features:</h2>
+            <ul>
+                <li><strong>Set Alarm:</strong> Users can input the desired time in the HH:mm format to set an alarm.</li>
+                <li><strong>Stop Alarm:</strong> The application provides a button to stop the alarm once it starts ringing.</li>
+                <li><strong>Real-Time Monitoring:</strong> Continuously checks the current time against the user-set alarm time.</li>
+                <li><strong>Audio Integration:</strong> Plays an alarm sound ("alarm.wav") when the set time matches the system time.</li>
+            </ul>
+        </div>
+
+        <div class="user-interface">
+            <h2>User-Friendly Interface:</h2>
+            <ul>
+                <li><strong>Color-coded Elements:</strong> Clear distinction between input, action, and display areas with a colorful design.</li>
+                <li><strong>Interactive Controls:</strong> Includes buttons for setting and stopping the alarm, ensuring ease of use.</li>
+            </ul>
+        </div>
+
+        <div class="technical-details">
+            <h2>Technical Details:</h2>
+            <ul>
+                <li><strong>GUI Design:</strong> Built using AWT components like Frame, Label, TextField, and Button.</li>
+                <li><strong>Real-Time Clock:</strong> Utilizes <code>LocalTime</code> and <code>DateTimeFormatter</code> from the <code>java.time</code> package to handle time operations.</li>
+                <li><strong>Audio Playback:</strong> Integrates the <code>AudioSystem</code> and <code>Clip</code> classes to play the alarm sound.</li>
+                <li><strong>Event Handling:</strong> Implements <code>ActionListener</code> for button clicks and <code>WindowAdapter</code> for managing the window close event.</li>
+            </ul>
+        </div>
+
+        <div class="learning-outcomes">
+            <h2>Learning Outcomes:</h2>
+            <ul>
+                <li>Enhanced understanding of GUI development with AWT in Java.</li>
+                <li>Experience in real-time data handling using Java's <code>java.time</code> package.</li>
+                <li>Basic multimedia programming with sound playback in Java.</li>
+                <li>Event-driven programming through <code>ActionListener</code> and <code>WindowAdapter</code>.</li>
+            </ul>
+        </div>
+
+        <p>This project showcases my ability to design simple yet functional applications and serves as a foundation for exploring more advanced Java-based GUI and multimedia projects.</p>
+    </div>
+</body>
+</html>
